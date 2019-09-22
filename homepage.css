@@ -44,10 +44,12 @@
 
 .list-itm a{
 	color: white;
+	text-decoration: none;
 }
 
 .list-itm a:hover{
 	box-shadow: 0px 0px 2px black;
+	text-decoration: underline;
 }
 
 #logo{
@@ -61,6 +63,7 @@
 .search-main{
 	width: 100%;
 	height: 70px;
+	margin-bottom: ;
 }
 
 .search-box{
@@ -69,7 +72,7 @@
 	background: #2f3640;
 	border-radius: 40px;
 	padding: 10px;
-	margin: 5px;
+	margin: 10px;
 }
 
 .search-txt{
@@ -94,34 +97,43 @@
 
 .search-box:hover .search-txt{
 	display: block;
-	width: 280px;
+	width: 300px;
 
 }
 
 
 .main-container{
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 2px;
+	
 }
 
 .card{
-  width: 17%;
-  background-color:  #d0d3d4;
-  border-radius: 5px;
-  box-shadow: 2px 2px 10px black;
-  margin: 22px;
+  	width: 18%;
+  	background-color:  #d0d3d4;
+  	border-radius: 5px;
+  	box-shadow: 2px 2px 10px black;
+  	margin: 20px;
+  	margin-top: 30px;
   }
 
-  .card::after{
-  	content: "";
+.line{
+	display: flex;
+	flex-wrap: nowrap;
+	width: 100%;
+	/*border: 2px solid blue;*/
+}
+
+.card::before{
+	content: "";
 	display: block;
-  	position: absolute;
-  	left: 0%;
-	top: 60%;
-  	transform: translateX(10%);
-  	border-bottom: 2px; 
-  	border-color: black;
+	position: absolute;
+	left: 0%;
+	top: 33.5%;
+	display: block;
+	transform: translateX(10.5%);
+	line-height: 40px;
+	border-bottom: 2px solid  #909497;
+	width: 100%;
+	z-index: 1;
   }
 
  .image1 img{
