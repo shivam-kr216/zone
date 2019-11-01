@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: #cc9900;
+	
 }
 
 header{
@@ -18,13 +18,14 @@ header{
 	margin: 0;
 	padding: 0;	
 	display: flex;
-	
+	background-color:  #f1948a ;
 }
 
 .head-content{
 	margin: 0;
 	padding: 0;
 	width:65%;
+	color: #fff;
 }
 
 .main-head .head-content .rotate1{
@@ -92,7 +93,7 @@ ul li{
 	width: 160px;
 	float: left;
 	margin: 6px;
-	background-color: black;
+	background-color: #fff;
 	opacity: 0.9;
 	border-radius: 5px;
 	text-align: center;
@@ -101,8 +102,9 @@ ul li{
 ul li{
 	font-size: 20px;
 	text-decoration: none;
-	color: white;
+	color: black;
 	padding: 8px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #drop{
@@ -121,7 +123,7 @@ ul li{
 }
 
 ul li{
-	border-bottom: 2px solid white;
+	border-bottom: 2px solid  #85c1e9 ;
 }
 
 ul li:hover{
@@ -227,6 +229,16 @@ ul li:hover{
 
 }
 
+.lst{
+	border: 2px solid red;
+	height: auto;
+	width: 300px;
+	position: absolute;
+	right: 3%;
+	top: 58%;
+	z-index: 1;
+	display: none;
+}
 
 .main-container{
 	max-width: 90%;
@@ -236,14 +248,19 @@ ul li:hover{
 
 .card{
 	width: 250px;
-	height: 300px;
+	height: 320px;
 	margin: 0 auto 50px;
-  	background-color:  #d0d3d4;
-  	border-radius: 5px;
-  	box-shadow: 0px 8px #234a78, -8px 0px  #277823, 6px 0px  #320b04, 0px -6px  #6c2378; 
+  	background-color:  #fff;
+  	/*border-radius: 5px;*/
+  	/*box-shadow: 0px 8px 10px #f5cba7, -8px 0px 10px #fff, 6px 0px 10px #f5cba7, 0px -6px 10px #f5cba7;*/ 
 	border: none;
-	outline: none;display: inline-block;
+	outline: none;
+	display: inline-block;
 	overflow: hidden;
+  }
+
+  .card:hover{
+  	box-shadow: 0px 8px 10px #f5cba7, -8px 0px 10px #fff, 6px 0px 10px #f5cba7, 0px -6px 10px #f5cba7;
   }
 
 .line, .line1{
@@ -265,16 +282,17 @@ ul li:hover{
 }*/
 
 .image1{
+	height: 240px;
 	border: none;
 	outline: none;
-	background-image: url("camera1.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
 }
 
  .image1 img{
 	width: 100%;
-	height: auto;
-	border-radius: 5px;
+	height: 100%;
+	/*border-radius: 5px;*/
 	border: none;
 	outline: none;
 	opacity: 0;
@@ -285,8 +303,13 @@ ul li:hover{
 	opacity: 1;
 }
 
+.title{
+	height: 40px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
 h3.cat{
-	color: blue;
+	color: #f1948a;
 }
 
 .banner {
