@@ -4,7 +4,7 @@
 }
 
 body{
-	background-color: #a0854a;
+	background-color: #abebc6;
 }
 
 header{
@@ -53,11 +53,10 @@ header{
 .content{
 	overflow: hidden;
 	height: 60px;
-	background:  #27AE60;
 	color: #fff;
 	margin: 0 auto;
 	text-align: center;
-	box-shadow: 0px 5px  #234a78, -5px 0px  #277823, 4px 0px  #320b04, 0px -3px  #6c2378; 
+	/*box-shadow: 0px 5px  #234a78, -5px 0px  #277823, 4px 0px  #320b04, 0px -3px  #6c2378; */
 	
 }
 
@@ -200,6 +199,7 @@ header{
 
 .make-center{
 	text-align: center;
+	background-color:  #f1948a ;
 }
 .make-center h1{
 	/*-moz-animation-delay:  16s;*/
