@@ -4,13 +4,14 @@
 	<title>homepage</title>
 	<link rel='stylesheet' href='cjFile/css/bootstrap.min.css'>
 	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body>
 	<header>
 		<div class="main-head">
 			<div class="head-content">
-				<h2><b>Billion <span class="rotate1">B</span>azzar</b></h2>
+				<h2><b>Billion Bazzar</b></h2>
 			</div>
 			<div class="categories">
 				<div class="middle">
@@ -44,66 +45,73 @@
 	
 	<div class="slider">
 		<figure>
-			<img src="b1.jpg">
-			<img src="b3.jpg">
+			<img src="images/b1.jpg">
+			<img src="images/b3.jpg">
 		</figure>
 	</div>
 	
 	<div class="search-main">
 
 		<div class="search-box">
-			<input class="search-txt" type="text" name="search" placeholder="Type to search">
+			<input class="search-txt" onfocus="changeList()" type="text" name="search" placeholder="Type to search">
 				<a class="search-btn" href="#">
 					<i class="fas fa-search"></i>
 				</a>
 		</div>
+		<div class="lst">
+				<ul>
+					<li>item1</li>
+					<li>item2</li>
+				</ul>
+			</div>
 
-	<div class="head2">
-		<div class="container-fluid"><h3 class="cat">Accessories</h3></div>
+		<div class="head2">
+			<div class="container-fluid"><h3 class="cat">Accessories</h3></div>
+		</div>
 	</div>
 	
 	<div class="main-container">
 		<div class="line1">
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/camera.jpg);">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h4>Canon camera</h4>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/camera3.jpg);">
+					<img src="images/camera2.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h4>Casio camera</h4>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 				
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/camera4.jpg);">
+					<img src="images/camera5.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h4>Epson camera</h4>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/camera8.jpg);">
+					<img src="images/camera7.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h4>Nikon best camera</h4>
 				</div>
 				<center><button class="btn primary-btn butt1" onclick="disable()">Add to cart</button></center>
 			</div>
 			<!--<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -113,7 +121,7 @@
 		</div>
 	</div>
 		<div class="banner">
-			<img src="b2.jpg">
+			<img src="images/b2.jpg">
 		</div>
 	<div class="head2">
 		<div class="container-fluid"><h3 class="cat">Mobiles</h3></div>
@@ -121,8 +129,8 @@
 	<div class="main-container">
 		<div class="line">
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/p2.jpg);">
+					<img src="images/p1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -130,8 +138,8 @@
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/p4.jpg);">
+					<img src="images/p3.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -140,8 +148,8 @@
 			</div>
 				
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/p5.jpg);">
+					<img src="images/p6.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -149,8 +157,8 @@
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/p7.jpg);">
+					<img src="images/p8.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -159,7 +167,7 @@
 			</div>
 			<!--<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -179,7 +187,7 @@
 		<!--<div class="line">
 			<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -188,7 +196,7 @@
 			</div>
 			<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -198,7 +206,7 @@
 				
 			<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -207,7 +215,7 @@
 			</div>
 			<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -216,7 +224,7 @@
 			</div>
 			<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -231,8 +239,8 @@
 	<div class="main-container">
 		<div class="line">
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/c2.jpg);">
+					<img src="images/c1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -240,8 +248,8 @@
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/d2.jpg);">
+					<img src="images/d1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -250,8 +258,8 @@
 			</div>
 				
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/bed2.jpg);">
+					<img src="images/bed1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -259,8 +267,8 @@
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
 			<div class="card">
-				<div class="image1">
-					<img src="camera.jpg">
+				<div class="image1" style="background-image: url(images/f2.jpg);">
+					<img src="images/f1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -269,7 +277,7 @@
 			</div>
 			<!--<div class="card">
 				<div class="image1">
-					<img src="camera.jpg">
+					<img src="images/camera1.jpg">
 				</div>
 				<div class="title">
 					<h3><b>Canon best camera</b></h3>
@@ -368,6 +376,15 @@
 				v.style.display="block";
 				document.getElementById('logo').innerHTML= "&#x25B2";
 			}
+	    }
+	    function changeList(){
+	    	var x = document.getElementById("lst")
+	    	if(v.style.display=="block"){
+	    		v.style.display="none";
+	    	}
+	    	else{
+	    		v.style.display="block";
+	    	}
 	    }
 	</script>
 </body>
