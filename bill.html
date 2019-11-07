@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="jquery-3.4.1.js"></script>
+  <script src="jquery-ui.js"></script>
+  <style type="text/css">
+    
+    #d
+    {
+      background-color: white;
+      
+    margin: 50px;
+    margin-left: 70px;
+       text-align: center;
+      height: 550px;
+      width: 90%;
+      box-shadow: 2px 2px 10px 10px #ccddee;
+         /*   margin-left: 165px;
+            padding-top: 10px;
+           
+            */
+            
+    }
+    #s
+    {
+      
+        
+      border:1px solid darkgrey;
+      width:60%;
+      height: 460px;
+      position: absolute;
+      top: 92px;
+      left:110px;
+      
+    }
+    #a
+    {
+      
+      width: 20%;
+      height: 350px;
+      
+      border: 1px solid gray;
+      position: absolute;
+      top: 92px;
+      right:120px;
+
+
+    }
+    body
+    {
+      background-color: #e8e8e8;
+
+    }
+    h3
+    {
+      
+      float:left;
+      margin-left: 30px;
+    }
+    #f
+    {float: left;
+      margin-left: -450px;
+      margin-top: 90px;
+           
+    }
+    #f1
+    {
+       height: 60px;
+             background-color: white;
+             border: 1px solid black; 
+             padding-left: 60px;
+             margin-top: -25px;
+    }
+    #f1:hover
+    {
+      background-color: skyblue;
+
+    }
+    img
+    {
+      width: 60px;
+      height: 60px;
+      position: absolute;
+    }
+    .hr
+    {
+      top: 50px;
+    }
+.a2,.a3,.a
+{    height: 40px;
+  width: 40px;
+  top:80px;
+  margin-left: -50px;
+}
+#txt
+{
+  float: left;
+      margin-left: -496px;
+      margin-top: 185px;
+}
+#input
+{
+  width: 500px;
+  height:30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+#txt1
+{
+  float: left;
+      margin-left: -500px;
+      margin-top: 280px;
+}
+#txt2
+{
+  float: left;
+      margin-left: -275px;
+      margin-top: 380px;
+}
+#input1
+{
+  width: 500px;
+  height:30px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+#txt3
+{
+  float: left;
+    margin-top:0px;
+    margin-left: -225px;
+    border-radius: 5px;
+    height: 30px;
+    width:150px;
+}
+#txt4
+{
+  float: left;
+    margin-top:-2px;
+    margin-left: -50px;
+    border-radius: 5px;
+    height: 30px;
+    width:150px;
+}
+#img
+{
+  height: 348px;
+  width:267.5px;
+  left: 1px;
+  top:1px;
+  
+}
+/*#img:hover
+{ top:-1px;
+  left: -1px;
+  opacity: 0.7;
+  height: 450px;
+  width: 340px;
+}
+#a:hover
+{
+  height: 450px;
+  width: 340px;
+  right: 75px;
+  
+}*/
+#Purchase
+{
+  width:270px;
+  height: 50px;
+    position: absolute;
+  top:485px; 
+  right: 120px;
+  color: skyblue; 
+  background-color: white;
+  border: 1px solid skyblue;
+
+}
+#Purchase:hover
+{
+  background-color: skyblue;
+  color:white;
+
+}
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+#master
+{
+  position: absolute;
+  height: 25px;
+  width: 40px;
+  padding-top: 3px;
+  left: 490px;
+}
+#help
+{
+  position: absolute;
+  height: 20px;
+  width:30px;
+  bottom:23px;
+    left: 495px;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#order
+{
+  border: 1px double black;
+  width:250px;
+  height: 330px; 
+  position: absolute;
+  left: 550px;
+  top: 10px;
+
+}
+#button
+{
+  position: absolute;
+  left: 570px;
+  width:210px;
+  height: 50px;
+  bottom: 30px;
+
+}
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+#button:hover
+{
+  color:white;
+  background-color: skyblue;
+  border: none;
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+span.price {
+  float: right;
+  color: grey;
+}
+#e
+{
+  width:210px;
+    margin-left: 20px;
+}
+#b
+{
+  margin-left: 50px;
+}
+#error
+{
+  margin-right: -330px;
+  margin-top: 2px;
+  
+}
+#select1
+{
+  position: absolute;
+  top: 140px;
+  left: 30px;
+  
+
+
+}
+#select2
+{
+  position: absolute;
+  top: 140px;
+  right: 292px;
+}
+#select1 
+{
+  width: 150px;
+  height: 30px;
+}
+#select2 
+{
+  width: 162px;
+  height: 30px;
+}
+* {
+  box-sizing: border-box;
+
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/*body {font-family: Arial, Helvetica, sans-serif;}*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 300px;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  </style>
+<script type="text/javascript">
+    function ddlselect()
+    {
+      var x= document.getElementById('select1');
+      var displayitem=x.options[x.selectedIndex].value;
+           if(displayitem=='Debit card')
+           {
+            document.getElementById('select2').style.display='block';
+           }
+    };
+
+
+  </script>
+ <script type="text/javascript">
+	function submit()
+	{
+		var user=document.getElementById('input').value;
+		var user2=document.getElementById('input1').value;
+		if(user=="")
+		{
+			alert("sorry");
+		}
+	}
+	function enter()
+
+</script>
+
+</head>
+<body onload="changevalue()">
+<a href="#" id="p"></a>
+<div id="d">
+
+<div id="s"><h3><b> SELECT PAYMENT METHOD/PERSONAL DETAILS</b></h3>
+  
+<section id="f">
+
+  <a href="click.html" style="text-decoration: none;"><button id="f1" onclick="link2()" id="o"><img src="images/6.png" class="a">Using Card</button></a>
+  <a href="bank.html" style="text-decoration: none;"><button id="f1" class="e" style="margin-left: 20px;" onclick="link()"><img src="images/4.png" class="a2">Bank Transfer</button></a>
+  <button class="b" id="myBtn" style="margin-left: 20px;   height: 60px;
+             background-color: white;
+             border: 1px solid black; 
+             padding-left: 60px;
+             margin-top: -25px;"><img src="images/3.png" class="a3">Personal details
+  </button></section>
+     <select id="select1" onchange="ddlselect()">
+  <option>Select Card</option>
+  <option >Credit card</option>
+  <option  >Debit card</option>
+</select>
+<select id="select2" style="display: none;">
+<option>Master Card</option>
+<option>Rupay Card</option>
+<option> American Express (Amex)</option>
+</select>
+<section id="txt">
+<b style="margin-left: -380px;">NAME ON CARD</b><br><br>
+  <input type="text" id="input" id="m" name="username" placeholder="username" maxlength="15" pattern="^[a-zA-Z0-9_.-]*$" minlength="4" required autocomplete="off" onkeypress="enter()">
+<p id="error" style="display: none;">THIS IS EXAMPLE</p>
+</section>
+<section id="txt1">
+<b style="margin-left: -385px;">CARD NUMBER</b><br><br>
+  <input type=text id="input1"  id="h"  onkeypress="fun()" required maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx">
+  <img src="images/7.png" id="master">
+
+</section>
+<section id="txt2">
+<b style="margin-left: -388px;">MONTH</b><br><br>
+
+<select id="txt3"  onblur="select()">
+  <option>Select Month</option>
+  <option>0</option>
+  <option>01</option>
+  <option>02</option>
+  <option>03</option>
+  <option>04</option>
+  <option>05</option>
+  <option>06</option>
+  <option>07</option>
+  <option>08</option>
+  <option>09</option>
+</select>  
+
+</section>
+<section id="txt2">
+<b style="margin-left: -170px;">Year</b><br><br>
+
+<select id="txt4" >
+  <option>Select Year</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+  <option>13</option>
+  <option>14</option>
+  <option>15</option>
+  <option>16</option>
+  <option>17</option>
+  <option>18</option>
+  <option>19</option>
+  <option>20</option>
+  <option>21</option>
+  <option>22</option>
+  <option>23</option>
+  <option>24</option>
+  <option>25</option>
+  <option>26</option>
+  <option>27</option>
+  <option>28</option>
+  <option>29</option>
+</select>  
+
+</section>
+<section id="txt2">
+
+<b style="margin-left: 0px;">CVV</b><br><br>
+<input type="password" maxlength="3" style="height: 25px; width:155px; margin-left: 120px; margin-top:-3px; border-radius: 5px; border: 1px solid black;" id="check">
+<img src="images\11.png" id="help">
+</section>
+<section id="order"><p>Order Summery
+<section id="e"><hr></section></p>
+<h5>Samsung Galaxy S10 Plus <b id="b" style="color:blue;">$785</b></h5>
+  <h6 margin-top="-10px;">Lorem lpsum dolor sit amet.consectetuer adipiscing elit. sed diam quis nostrud exercitation.</h6>
+  <p style="margin-left: -215px; color: darkgreen;">&#10003;</p><h5 style="margin-top: -35px; margin-left: -90px;">128GB Storage</h5>
+  <p style="margin-left:40px; color: darkgreen; margin-top: -40px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:130px;">4k display</h5>
+  <p style="margin-left:-215px; color: darkgreen; margin-top: -10px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:-110px;">5,7" Screen </h5>
+  <p style="margin-left:40px; color: darkgreen; margin-top: -40px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:110px;">Silver</h5>
+  <p style="margin-left:-215px; color: darkgreen; margin-top: -10px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:-150px;">6GB </h5>
+  <section style="border-top: 1px solid black; background-color:silver; margin-top: -10px; height: 73px;" ><h4 style="margin-top: 9px;"  >Wednesday</h4>
+    <p style="margin-top: -10px;">December 18, 2019 | 11:30 PM</p></section>
+</section>
+<a href="finalPage.html"><button id="button" onsubmit="submit()">Purchase</button></a>
+</div>
+
+<div id="a"><img src="images/4.jpg" id="img"  onmouseover="stop()" onmouseout="changevalue()"></div>
+<a href="home.html"><button id="Purchase">Continue Shopping</button></a>
+</div>
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+<!-- <div class="row"  >
+  
+ <div class="col-75">
+    <div class="container" style="width:450px; margin-left: 220px; margin-top: -550px; z-index: 1; position: fixed; display: none;">
+      <div class="row">
+          <div class="col-50"> -->
+            
+            <h3 style="margin-top:-10px ">Personal Details</h3>
+            <label style="margin-top: 15px; position: absolute; margin-left: -160px;"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      
+    </div>
+
+
+
+
+<script type="text/javascript">
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+
+//  function pop() 
+//      {
+  
+// var modal = document.getElementsByClassName("container");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
+// modal.style.display = "block";
+// }
+
+
+// // When the user clicks on <span> (x), close the modal
+// function pop1() {
+// var modal = document.getElementsByClassName("container");
+// var btn = document.getElementById("myBtn");
+// var span = document.getElementsByClassName("close")[0];
+// modal.style.display = "none";
+// }
+   
+
+    $(document).ready(function()
+     {
+      $('#input').keyup(function()
+      {
+        
+          this.value=this.value.toLocaleUpperCase();
+        });
+     });
+    $(document).ready(function()
+     {
+      $('#input').keydown(function()
+      {
+        
+          this.value=this.value.toLocaleUpperCase();
+            });
+     });
+
+    /* $(document).ready(function()
+     {
+      $('#input1').keyup(function()
+      {
+        if (isNaN(this.value)) {
+          alert("Please Enter only Number");
+        }
+        function fun() {
+          if(this.value.length==3)
+          {
+            this.value.add(' ');
+          }
+        }
+        
+      });
+
+     }); */
+     $(document).ready(function()
+     {
+      $('#check').keyup(function()
+      {
+        if (isNaN(this.value)) {
+          document.getElementById('check').disabled=true;
+          alert("Enter only Number");
+        }
+      });
+     });
+      $(document).ready(function()
+     {
+      $('#check').keyup(function()
+      {
+        if (isNaN(this.value)) {
+               
+               $('#error').show();
+        }
+      });
+     });
+     /* $(document).ready(function()
+      {
+        $('#check').blur(function()
+        {
+          $('#input').css('border-color','black');
+        }
+
+      }); */
+     var i=1;
+      function slideshow()
+      {
+        
+        
+        const imagesof=['images/4.jpg','images/5.jpg','images/6.jpg','images/7.jpg'];
+    document.getElementById('img').src=imagesof[i];
+    if(i<imagesof.length-1)
+    {
+      i++;
+    }
+    else 
+    {
+      i=0;
+    }
+  }
+      var x;
+     
+     function changevalue()
+        {
+          x=setInterval(slideshow,1000);
+        }
+    
+        function stop()
+    {
+         clearInterval(x);
+    }
+     
+  </script> 
+<script type="text/javascript">
+  
+</script>
+</body>
+</html>

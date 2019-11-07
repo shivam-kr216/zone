@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.4.1.js"></script>
+	<script src="jquery-ui.js"></script>
+	<style type="text/css">
+		#d
+		{
+			background-color: white;
+			
+		margin: 50px;
+		margin-left: 70px;
+			 text-align: center;
+			height: 550px;
+			width: 90%;
+			box-shadow: 2px 2px 10px 10px #ccddee;
+         /*   margin-left: 165px;
+            padding-top: 10px;
+           
+            */
+            
+		}
+		#s
+		{
+			
+		    
+			border:1px solid darkgrey;
+			width:60%;
+			height: 460px;
+			position: absolute;
+			top: 92px;
+			left:110px;
+			
+		}
+		#a
+		{
+			
+			width: 20%;
+			height: 350px;
+			
+			border: 1px solid gray;
+			position: absolute;
+			top: 92px;
+			right:120px;
+
+
+		}
+		body
+		{
+			background-color: #e8e8e8;
+
+		}
+		h3
+		{
+			
+			float:left;
+			margin-left: 30px;
+		}
+		#f
+		{float: left;
+			margin-left: -450px;
+			margin-top: 90px;
+           
+		}
+		#f1
+		{
+			 height: 60px;
+             background-color: white;
+             border: 1px solid black; 
+             padding-left: 60px;
+		}
+		#f1:hover
+		{
+			background-color: skyblue;
+		}
+		img
+		{
+			width: 60px;
+			height: 60px;
+			position: absolute;
+		}
+		.hr
+		{
+			top: 50px;
+		}
+.a2,.a3,.a
+{    height: 40px;
+	width: 40px;
+	top:100px;
+	margin-left: -50px;
+}
+#txt
+{
+	float: left;
+			margin-left: -496px;
+			margin-top: 185px;
+}
+#input
+{
+	width: 500px;
+	height:30px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#txt1
+{
+	float: left;
+			margin-left: -500px;
+			margin-top: 280px;
+}
+#txt2
+{
+	float: left;
+			margin-left: -275px;
+			margin-top: 380px;
+}
+#input1
+{
+	width: 500px;
+	height:30px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+#txt3
+{
+	float: left;
+    margin-top:0px;
+    margin-left: -225px;
+    border-radius: 5px;
+    height: 30px;
+    width:150px;
+}
+#txt4
+{
+	float: left;
+    margin-top:-2px;
+    margin-left: -50px;
+    border-radius: 5px;
+    height: 30px;
+    width:150px;
+}
+#img
+{
+	height: 348px;
+	width:267.5px;
+	left: 1px;
+	top:1px;
+	
+}
+/*#img:hover
+{ top:-1px;
+	left: -1px;
+	opacity: 0.7;
+	height: 450px;
+	width: 340px;
+}
+#a:hover
+{
+	height: 450px;
+	width: 340px;
+	right: 75px;
+	
+}*/
+#Purchase
+{
+	width:270px;
+	height: 50px;
+    position: absolute;
+	top:485px; 
+	right: 120px;
+	color: skyblue; 
+	background-color: white;
+	border: 1px solid skyblue;
+
+}
+#Purchase:hover
+{
+	background-color: skyblue;
+	color:white;
+
+}
+#master
+{
+	position: absolute;
+	height: 30px;
+	width: 40px;
+	padding-top: 3px;
+	left: 490px;
+}
+#help
+{
+	position: absolute;
+	height: 25px;
+	width:40px;
+	
+    left: 495px;
+}
+#or
+{
+	position: relative;
+	margin-top: 180px;
+     margin-right: 360px;
+     
+	
+}
+#order
+{
+	border: 1px double black;
+	width:250px;
+	height: 330px; 
+	position: absolute;
+	left: 550px;
+	top: 10px;
+
+}
+#button
+{
+	position: absolute;
+	left: 300px;
+	width:210px;
+	height: 50px;
+	bottom: 20px;
+}
+#button:hover
+{
+	color:white;
+	background-color: skyblue;
+	border: none;
+}
+#e
+{
+	width:210px;
+    margin-left: 20px;
+}
+#b
+{
+	margin-left: 50px;
+}
+#error
+{
+	margin-right: -330px;
+	margin-top: 2px;
+	
+}
+
+
+
+	</style>
+
+
+</head>
+<body onload="changevalue()">
+<a href="#" id="p"></a>
+<div id="d">
+
+<div id="s"><h3><b> SELECT PAYMENT METHOD/PERSONAL DETAILS</b></h3>
+	
+<section id="f">
+
+	<a href="bill.html" style="text-decoration: none;"><button id="f1" onclick="link2()" id="o"><img src="images/6.png" class="a"> Credit Card</button></a>
+	<a href="bank.html" style="text-decoration: none;"><button id="f1" class="e" style="margin-left: 20px;" onclick="link()"><img src="images/4.png" class="a2">Bank Transfer</button></a>
+	<a href="personal.html" style="text-decoration: none;"><button id="f1" class="b" style="margin-left: 20px;" onclick="link1()"><img src="images/3.png" class="a3">Personal details</button></a>
+</section>
+<section id="txt">
+<b style="margin-left: -380px;">NAME OF BANK</b><br><br>
+  <select id="input" id="m" onkeyup="filter(this.value)">
+  	<option>Select Bank</option>
+  	<option>Nationalised Banks in India</option>
+  	<option>Axis Bank</option>
+  	<option>Allahabad Bank</option>
+  	<option>American Express</option>
+  	<option>Andhra Bank</option>
+  	<option>Arab Bangladesh</option>
+  	<option>Bank of Baroda India</option>
+  	<option>Bank Muscat</option>
+  	<option>Bank of America</option>
+  	<option>Bank of India</option>
+  	<option>Bank of Maharashtra</option>
+  	<option>Bank of Punjab</option>
+  	<option>Bank of Rajasthan</option>
+  	<option>Barclays Bank PLC</option>
+  	<option>Bharat Overseas</option>
+  	<option>Canara Bank</option>
+  	<option>Canara Bank</option>
+  	<option>Catholic Syrian</option>
+  	<option>Centurion</option>
+  	<option>Ceylon</option>
+  	<option>DBS</option>
+  	<option>Dena</option>
+  	<option>Deutsche Bank</option>
+  	<option>Export-Import Bank Of India</option>
+  	<option>Federal Bank India</option>
+  	<option>Global Trust</option>
+  	<option>HDFC</option>
+  	<option>Hongkong Shanghai Banking</option>
+  	<option>ICICI Bank</option>
+  </select>
+</section>
+<section id="txt1">
+<b style="margin-left: -415px;">IFSC CODE</b><br><br>
+  <input type=text id="input1"  id="h"  onkeypress="fun()" maxlength="11" >
+ 
+
+</section>
+
+<section id="order"><p>Order Summery
+<section id="e"><hr></section></p>
+<h5>Kodak Digital Camera <b id="b" style="color:blue;">$61.22</b></h5>
+	<h6 margin-top="-10px;">Lorem lpsum dolor sit amet.consectetuer adipiscing elit. sed diam quis nostrud exercitation.</h6>
+	<p style="margin-left: -215px; color: darkgreen;">&#10003;</p><h5 style="margin-top: -35px; margin-left: -90px;">16.15MP Sensor</h5>
+	<p style="margin-left:40px; color: darkgreen; margin-top: -40px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:130px;">4x Lens</h5>
+	<p style="margin-left:-215px; color: darkgreen; margin-top: -10px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:-110px;">27-108mm </h5>
+	<p style="margin-left:40px; color: darkgreen; margin-top: -40px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:110px;">Red</h5>
+	<p style="margin-left:-215px; color: darkgreen; margin-top: -10px;">&#10003;</p><h5 style="margin-top: -35px; margin-left:-150px;">2.7"</h5>
+	<section style="border-top: 1px solid black; background-color:silver; margin-top: -10px; height: 73px;" ><h4 style="margin-top: 9px;"  >Wednesday</h4>
+		<p style="margin-top: -10px;">December 18, 2019 | 11:30 PM</p></section>
+</section>
+<button id="button">Purchase</button>
+</div>
+<div id="a"><img src="images/4.jpg" id="img"  onmouseover="stop()" onmouseout="changevalue()"></div>
+<a href="finalPage.html"><button id="Purchase">Purchase</button></a>
+</div>
+<script type="text/javascript">
+		 $(document).ready(function()
+		 {
+		 	$('#input').keyup(function()
+		 	{
+		 		
+		 			this.value=this.value.toLocaleUpperCase();
+		 			
+		 	});
+
+		 });
+		  $(document).ready(function()
+		 {
+		 	$('#input1').keyup(function()
+		 	{
+		 		
+		 			this.value=this.value.toLocaleUpperCase();
+		 			
+		 	});
+
+		 });
+function filter(keyword) {
+    var select = document.getElementById("input");
+    for (var i = 0; i < select.length; i++) {
+        var txt = select.options[i].text;
+        var include = txt.toLowerCase().startsWith(keyword.toLowerCase());
+        select.options[i].style.display = include ? 'list-item':'none';
+    }
+}
+		 
+		  
+
+                     var i=1;
+      function slideshow()
+      {
+      	
+      	
+      	const imagesof=['images/4.jpg','images/5.jpg','images/6.jpg','images/7.jpg'];
+		document.getElementById('img').src=imagesof[i];
+		if(i<imagesof.length-1)
+		{
+			i++;
+		}
+		else 
+		{
+			i=0;
+		}
+	}
+      var x;
+     
+     function changevalue()
+        {
+        	x=setInterval(slideshow,1000);
+        }
+    
+        function stop()
+		{
+         clearInterval(x);
+		}
+     
+	</script> 
+
+</body>
+</html>
