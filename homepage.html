@@ -7,22 +7,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Staatliches|Ubuntu&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="homepage.css">
+	<script type="text/javascript" src="angular.min.js"></script>
 </head>
 <body>
 	<header>
 		<div class="main-head">
 			<div class="head-content">
-				<h2><b>Billion Bazzar</b></h2>
+				<h2><a href="homepage.html"><b>Billion Bazaar</b></a></h2>
 			</div>
 			<div class="categories">
 				<div class="middle">
-					<a class="btn1" href="#"><i class="fab fa-facebook-f"></i></a>
+					<a class="btn1" href="https://www.facebook.com/profile.php?id=100038016395032"><i class="fab fa-facebook-f"></i></a>
 					<a class="btn1" href="#"><i class="fab fa-twitter"></i></a>
 					<a class="btn1" href="#"><i class="fab fa-google"></i></a>
 					<a class="btn1" href="#"><i class="fab fa-instagram"></i></a>
 				</div>
 				<div class="navigation">
-					<ul><li onclick="arrow()">Categories<span id="logo">&#x25BC</span>
+					<ul>
+						<li><a href="newlogin.html" style="color: black; text-decoration: none;">Login/Register</a></li>
+						<li><a href="bill.html" style="color: black; text-decoration: none;">Cart<span class="logo1">&#128722</span></a></li>				
+						<li onclick="arrow()">Categories<span id="logo">&#x25BC</span>
 							<div id="drop">
 								<ul>
 									<li><a href="#">Furniture</a></li>
@@ -33,8 +37,7 @@
 						</li>
 						
 						<!--</div>-->
-						<li>Cart<span class="logo1">&#128722</span></li>						
-						<li>Login/Register</li>
+						
 					</ul>
 				</div>
 				
@@ -51,18 +54,17 @@
 		</figure>
 	</div>
 	
-	<div class="search-main">
+	<div class="search-main" ng-app="App" ng-controller="mycr">
 
 		<div class="search-box">
-			<input class="search-txt" onfocus="changeList()" type="text" name="search" placeholder="Type to search">
-				<a class="search-btn" href="#">
+			<input class="search-txt" id="search-txt" ng-model="fil" type="text" name="search" placeholder="Type to search">
+				<a class="search-btn text-danger">
 					<i class="fas fa-search"></i>
 				</a>
 		</div>
-		<div class="lst">
-				<ul>
-					<li>item1</li>
-					<li>item2</li>
+		<div class="lst" id="lst" onblur="hideContent()">
+				<ul ng-repeat="x in product|filter:fil">
+					<li class="border" onclick="window.location.replace('bill.html')">{{ x }}</li>
 				</ul>
 			</div>
 
@@ -134,7 +136,7 @@
 					<img src="images/p1.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Huawai P30</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -143,7 +145,7 @@
 					<img src="images/p3.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Samsung galaxy A9</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -153,7 +155,7 @@
 					<img src="images/p6.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Vivo V10</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -162,7 +164,7 @@
 					<img src="images/p8.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Nokia 8</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -237,6 +239,7 @@
 	<div class="head2">
 		<div class="container-fluid"><b><h3 class="cat">Furniture</h3></b></div>
 	</div>
+	
 	<div class="main-container">
 		<div class="line">
 			<div class="card">
@@ -244,7 +247,7 @@
 					<img src="images/c1.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Standard Set Bed</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -253,7 +256,7 @@
 					<img src="images/d1.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Standard Dinning Set</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -263,7 +266,7 @@
 					<img src="images/bed1.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Wide Matresses Bed</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -272,7 +275,7 @@
 					<img src="images/f1.jpg">
 				</div>
 				<div class="title">
-					<h3><b>Canon best camera</b></h3>
+					<h3><b>Special Soft Chair</b></h3>
 				</div>
 				<center><button class="btn primary-btn butt1">Add to cart</button></center>
 			</div>
@@ -362,9 +365,29 @@
 			$("button").click(function(){
 				$(this).attr("disabled","true");
 				$(this).css({"background-color":"#2b2c2d", "color": "white", "opacity":0.4});
+			});
+			$("#search-txt").focus(function(){
+				$("#lst").show();
+			})
+			$("#lst").hover(function(){
+				$("#search-txt").show();
+				$(".search-btn").show();
+			})
+			$("#lst").on({
+				mouseleave: function(){
+					$(this).hide();
+					$(".search-txt").hide();
+				}
+			})
+			$(".search-btn").on({
+				mouseenter: function(){
+					$(".search-txt").show();
+					$("#lst").show();
+				}
 			})
 		})
 	</script>
+
 	<script>
 		function arrow(){
 			document.getElementById('logo').innerHTML= "&#x25B2";
@@ -378,16 +401,21 @@
 				document.getElementById('logo').innerHTML= "&#x25B2";
 			}
 	    }
-	    function changeList(){
-	    	var x = document.getElementById("lst")
-	    	if(v.style.display=="block"){
-	    		v.style.display="none";
-	    	}
-	    	else{
-	    		v.style.display="block";
-	    	}
-	    }
+
+	   /* function hideContent(){
+	    	document.getElementById('lst').style.display=none;
+	    }*/
 	</script>
+
+	<script>
+		var App = angular.module("App",[]);
+		App.controller("mycr",['$scope',function(s){
+			s.fil;
+			s.product = ["Canon E345","Sony M377","PanaSonic E1","Nikon 2AR","Puma T-shirt",
+			"Iphone 6","Iphone 7","Iphone X","Galaxy S7", "Standard Dinning Set", "Wide Matresses Bed"];
+		}]);
+	</script>
+	
 </body>
 </html>
 
