@@ -18,7 +18,8 @@ header{
 	margin: 0;
 	padding: 0;	
 	display: flex;
-	background-color:  #f1948a ;
+	background: linear-gradient(to right, #FF416C, #FF4B2B);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 
 .head-content{
@@ -29,14 +30,16 @@ header{
 	font-family: monospace, serif;
 }
 
-.main-head .head-content .rotate1{
-	transform: skewY(20deg):
-	/*-moz-transform: rotate(45deg);*/
-}
 
 .head-content h2{
 	text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
 }
+
+.head-content a{
+	text-decoration: none;
+	color: #fff;
+}
+
 
 .head-content h2::first-letter{
 	font-size: 155px;
@@ -56,7 +59,7 @@ header{
 .middle{
 	height: 85px;
 	text-align: right;
-	margin-right: 24px;
+	margin-right: 6px;
 
 }
 
@@ -68,7 +71,6 @@ header{
 	display: inline-block;
 	box-shadow: 0px 5px 15px -5px #00000070;
 	overflow: hidden;
-	margin-top: 5px;
 	padding: 5px;
 }
 
@@ -93,7 +95,7 @@ ul{
 
 ul li{
 	width: 160px;
-	float: left;
+	float: right;
 	margin: 6px;
 	background-color: #fff;
 	opacity: 0.9;
@@ -211,6 +213,7 @@ ul li:hover{
 	padding: 5px;
 	color: white;
 	font-size: 16px;
+	width: 300px;
 }
 
 .search-btn{
@@ -232,15 +235,25 @@ ul li:hover{
 }
 
 .lst{
-	border: 2px solid red;
-	height: auto;
+	height: 185px;
 	width: 300px;
 	position: absolute;
 	right: 3%;
 	top: 58%;
 	z-index: 1;
+	overflow: auto;
+	text-align: center;
+	display: none;
 }
 
+
+.lst ul li{
+	width: 100%;
+	background: black;
+	border: none;
+	outline: none;
+	color: #fff;
+}
 .main-container{
 	max-width: 90%;
 	width: 100%;
